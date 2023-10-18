@@ -35,6 +35,7 @@ public class Login {
 
     private void configComponents(){
         initUserField();
+        
     }
 
     private void initUserField(){
