@@ -3,14 +3,14 @@ package gui;
 import java.awt.Color;
 
 import javax.swing.*;
-import utilidad.JPanelDeluxe;
-import utilidad.JTextfieldDeluxe;
+import utilidad.*;
 
 public class Login {
     private JFrame ventana;
     private JPanelDeluxe fondo;
     private final int WIDTH=1000;
     private final int HEIGHT=600;
+    private JButtonDeluxe loginBtn;
     //private JTextfieldDeluxe user, password;
 
     public Login(){
@@ -35,7 +35,13 @@ public class Login {
 
     private void configComponents(){
         initUserField();
-        
+        initLoginBtn();
+    }
+
+    private void initLoginBtn(){
+        loginBtn = new JButtonDeluxe(40, Color.WHITE);
+        loginBtn.setBounds(500, 400, 320, 50);
+        fondo.add(loginBtn);
     }
 
     private void initUserField(){
