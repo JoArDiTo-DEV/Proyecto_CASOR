@@ -111,5 +111,6 @@ public class JButtonDeluxe extends JButton {
             g2d.setColor(color);
             g2d.fillRoundRect(0, 0, getWidth(), getHeight(), curva, curva);
         }
+        super.paintComponent(g);
     }
 }
